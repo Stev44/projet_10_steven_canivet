@@ -2,7 +2,6 @@
   "name": "77-events",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://stev44.github.io/projet_10_steven_canivet",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
@@ -20,9 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "lint": "eslint .eslintrc.js ./src",
-    "format": "prettier ./src --write",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "format": "prettier ./src --write"
   },
   "eslintConfig": {
     "extends": [
@@ -50,7 +47,6 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
-    "gh-pages": "^6.1.1",
     "prettier": "^2.6.2"
   }
 }
