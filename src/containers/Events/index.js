@@ -16,8 +16,9 @@ const EventList = () => {
   const filteredEvents = (
     (!type
       ? data?.events
-      : data?.events.filter((event)=> event.type === type)) || []
-  ).filter((event, index) => {
+      : data?.events.filter((event)=> event.type === type)) || [] )
+  .sort((evtA, evtB) => new Date(evtA.date) - new Date(evtB.date)) /* classe les événements dans l'ordre croissant  */
+  .filter((event, index) => {
     if (
       (currentPage - 1) * PER_PAGE <= index &&
       PER_PAGE * currentPage > index
